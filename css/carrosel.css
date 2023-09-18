@@ -1,0 +1,10 @@
+.splide{
+
+    margin-bottom: 130px;
+}
+
+.splide__pagination__page.is-active {
+    background: #414c85;
+    transform: scale(1.4);
+    z-index: 1;
+}

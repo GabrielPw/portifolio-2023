@@ -1,0 +1,52 @@
+.img_banner{
+    border-radius: 18px;
+}
+
+.column-sobre, .texto-sobre, .btn-sobre, .column-foto{
+
+    margin-top: 50px;
+}
+
+.contato-social{
+    height: auto;
+    display: flex;
+    justify-self: auto;
+    align-items: self-end;
+}
+
+.navbar-item img {
+     max-height: 4rem;
+}
+
+.svg-java{
+    position: relative;
+    top: -17px;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 68px;
+    background: #c3c9d9;
+    height: 68px;
+    border-radius: 15px;
+}
+
+.navbar-menu{
+    position: relative;
+    left: 170px;
+}
+
+.languages-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-projeto{
+    max-height: 320px;
+}
+
+.btn-sobre:hover{
+    background: #2b5197;
+    color: white;
+    transition: 0.5s;
+}

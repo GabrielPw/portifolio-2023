@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .img_banner{
     border-radius: 18px;
 }
@@ -44,6 +48,12 @@
 .img-projeto{
     max-height: 320px;
 }
+
+/* .project-info{
+    background: linear-gradient(to bottom, #55498a, #362c2c);
+    border-radius: 30px;
+    color: white;
+} */
 
 .btn-sobre:hover{
     background: #2b5197;

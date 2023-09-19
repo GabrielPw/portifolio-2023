@@ -14,7 +14,7 @@
 <body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
+      <a class="navbar-item" href="">
         <img src="img/logo_G.jfif" width="78" height="10">
       </a>
 
@@ -27,11 +27,11 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item">
+        <a class="navbar-item" href="#">
           Sobre mim
         </a>
 
-        <a class="navbar-item">
+        <a class="navbar-item" href="#image-carousel">
           Projetos
         </a>
       </div>
@@ -119,6 +119,7 @@
                     </div>
                     <div class="tab-content" id="content-resumo-1">
                       <h2 class="is-size-4 mb-5">Projeto biblioteca Online</h2>
+                      <span style="background: rgb(24, 158, 24); border-radius: 4px; padding: 1px 3px; font-weight: 600; color: white;">Web</span>
                       <p class="">Biblioteca online feita em php com funcionalidades de login e filtragem de livros por nome e autor.</p>
                       <p>link Repositório github: <a href="https://github.com/GabrielPw/bibliotecaPhp" target="_blank">Projeto</a></p>
                     </div>
@@ -152,6 +153,7 @@
                     </div>
                     <div class="tab-content" id="content-resumo-2">
                       <h2 class="is-size-4 mb-5">Projeto Aplicativo FastTooth</h2>
+                      <span style="background: rgb(103, 51, 247); border-radius: 4px; padding: 1px 3px; font-weight: 600; color: white;">Mobile</span>
                       <p class="">O app FastTooth é um aplicativo mobile desenvolvido para efetuar o agendamento de consulta de clientes em uma clínica ondontológica.</p>
                       <p>link Repositório github: <a href="https://github.com/GabrielPw/FastToothApp" target="_blank">Projeto</a></p>
                     </div>
@@ -185,6 +187,7 @@
                     </div>
                     <div class="tab-content" id="content-resumo-3">
                       <h2 class="is-size-4 mb-5">Blog com Java/Spring</h2>
+                      <span style="background: rgb(24, 158, 24); border-radius: 4px; padding: 1px 3px; font-weight: 600; color: white;">Web</span>
                       <p class="">Blog feito utilizando linguagem Java e Framework spring. Possui funcionalidade de login, adição de novos livros (por usuario admin), atualização e deleção (admin) e também conta com filtragem de livros por nome e categoria.</p>
                       <p>link Repositório github: <a href="https://github.com/GabrielPw/FastToothApp" target="_blank">Projeto</a></p>
                     </div>
@@ -205,14 +208,47 @@
         </div>
       </section>
 
+      <div class="another-projects">
+        <hr>
+        <p class="is-size-4 another-projects-span">outros projetos</p>
+        <div class="columns  is-vcentered">
+          <div class="column is-half" style="display: flex; flex-direction: column; border-right: 1px solid #f5f5f5;">
+            <h3 class="is-size-4">Gerenciador de livros p/ biblioteca (Desktop)</h3>
+            <span style="background: rgb(158, 33, 24); border-radius: 4px; padding: 1px 3px; font-weight: 600; color: white; width: fit-content; margin: 10px 0px;">Desktop</span>
+            <p style="margin: 20px 0px;">Programa desktop pensado para gerenciar livros em uma biblioteca, capaz de inserir, deletar e atualizar livros e filtrar livros por nome no campo de busca.</p>
+            <img src="https://github.com/GabrielPw/GerenciadorLivrosJSwing/raw/main/src/main/resources/print/print-tela1.jpg" alt="" srcset="" style="max-width: 450px; border-radius: 8px; margin-bottom: 10px;">
+            <div style="display: flex;" class="tecnologias-tags">
+              <span>Java</span>
+              <span>Hibernate</span>
+              <span>JSwing</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+          <div class="column">
+            <h3 class="is-size-4">Snake Game (Desktop)</h3>
+            <span style="background: rgb(214, 183, 46); border-radius: 4px; padding: 1px 3px; font-weight: 600; color: white; width: fit-content; margin: 10px 0px;">Game</span>
+            <p style="margin: 20px 0px;">replica do clássico Jogo da cobrinha feito em java/JSwing. O jogador pode controlar o player com as setinhas do teclado para se direcionar até a fruta e coletar pontos.</p>
+            <img src="img/snake_game.gif" alt="" srcset="" style="max-width: 450px; border-radius: 8px; margin-bottom: 10px;">
+            <div style="display: flex;" class="tecnologias-tags">
+              <span>Java</span>
+              <span>JSwing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script>
-  document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide( '#image-carousel' ).mount();
-  } );
+  document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#image-carousel', {
+    autoplay: true,    // Ativar o autoplay
+    interval: 8000,    // Definir o intervalo de tempo em milissegundos (3 segundos neste exemplo)
+    loop: true,
+  }).mount();
+});
 
   function mudarTab(tabClicada, mostrar_div, ocultar_div){
 

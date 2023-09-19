@@ -60,3 +60,19 @@ html{
     color: white;
     transition: 0.5s;
 }
+
+
+.another-projects-span{
+    width: 20%;
+    font-family: Helvetica, Arial;
+    margin-bottom: 60px;
+    text-decoration: underline;
+}
+
+.tecnologias-tags span{
+
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0px 5px;
+    margin: 0px 8px;
+}

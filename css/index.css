@@ -1,3 +1,8 @@
+:root{
+
+    --bg-blue: #2c2d3c;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -6,9 +11,68 @@ html{
     border-radius: 18px;
 }
 
-.column-sobre, .texto-sobre, .btn-sobre, .column-foto{
+.column-container-apresentacao{
+    max-width: 100%;
+    margin-bottom: 0px !important;
 
-    margin-top: 50px;
+    margin-left: 0; 
+    margin-right: 0; 
+    margin-top: 0;
+}
+
+.column-sobre{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column-foto{
+
+    display: flex;
+    background: var(--bg-blue);
+    border-radius: 0px 10px 0px 0px;
+    padding-bottom: 0;
+    align-items: end;
+}
+
+.apresentacao-titulo{
+    width: 75%;
+    font-size: 1.8rem;
+}
+
+.apresentacao-sobre{
+    font-size: 1.1rem;
+    width: 75%;
+
+}
+
+.apresentacao-buttons{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.apresentacao-buttons .btn-contato{
+
+    background: var(--bg-blue) !important;
+    color: white !important;
+}
+
+
+
+.languages-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--bg-blue);
+    
+    margin-left: 0; 
+    margin-right: 0; 
+    margin-top: 0;
 }
 
 .contato-social{
@@ -16,6 +80,28 @@ html{
     display: flex;
     justify-self: auto;
     align-items: self-end;
+}
+
+.table-social{
+
+    width: 100%;
+    box-shadow: 2px 2px 4px #3688a8;
+    border-radius: 1px 5px;
+}
+
+.table-social td{
+
+    font-size: 17px;
+    text-align: center !important;
+    color: white;
+    justify-self: center;
+    padding: 5px;
+    
+}
+
+.table-social{
+
+    background: var(--bg-blue);
 }
 
 .navbar-item img {
@@ -37,12 +123,6 @@ html{
 .navbar-menu{
     position: relative;
     left: 170px;
-}
-
-.languages-hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .img-projeto{
@@ -75,4 +155,28 @@ html{
     border-radius: 8px;
     padding: 0px 5px;
     margin: 0px 8px;
+}
+
+@media (max-width: 950px) {
+    
+    
+
+    .column-foto, .img_banner{
+        display: none;
+    }
+}
+
+@media (max-width: 1025px) {
+
+
+    .presentation{
+
+        margin-left:  40px !important;
+        margin-right: 40px !important;
+    }
+
+    .presentation h1{
+
+        font-size: 2rem !important;
+    }
 }

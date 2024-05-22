@@ -1,10 +1,63 @@
+:root{
+
+    --bg-blue: #2c2d3c;
+}
+
 .splide{
 
     margin-bottom: 130px;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.splide__pagination__page{
+
+    background: #ccc;
+    border: 0;
+    border-radius: 2.5px;
+    display: inline-block;
+    height: 5px;
+    margin: 3px;
+    padding: 0;
+    position: relative;
+    transition: background-color .2s linear;
+    width: 20px;
 }
 
 .splide__pagination__page.is-active {
-    background: #414c85;
+    background: #a13458;
     transform: scale(1.4);
     z-index: 1;
+}
+
+.project-container{
+
+    margin-top: 20px;
+    height: 100%;
+}
+
+.conteiner-colunas{
+
+    max-height: 100%;
+}
+
+.project-image{
+
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+}
+
+.project-image img{
+
+    
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.project-info{
+    background: white;    
 }

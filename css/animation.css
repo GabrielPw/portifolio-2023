@@ -1,0 +1,49 @@
+:root{
+
+    --bg-blue: #2c2d3c;
+}
+
+.container-contato:hover, .info-slide:active{
+
+    animation-name: expandcontato;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.redes-sociais{
+
+    height: 0;
+    
+    opacity: 0;
+    
+}
+
+.container-contato:hover .redes-sociais{
+    
+    transition: opacity 1s linear;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+}
+
+
+@keyframes expandcontato {
+    
+    0% {
+        height: 20%;
+        border: 1px solid var(--bg-blue);
+    }
+    
+    50% {
+        height: 50%;
+        border: 1px solid var(--bg-blue);
+        border-radius: 5px;
+    }
+    
+    100% {
+        height: 100%;
+        border: 1px solid var(--bg-blue);
+        border-radius: 10px;
+    }
+}

@@ -5,7 +5,7 @@
 
 .splide{
 
-    margin-bottom: 130px;
+    margin-bottom: 50px;
     border-radius: 0px 0px 10px 10px;
     border: 1px solid black;
     padding: 20px;
@@ -21,9 +21,16 @@
     margin: 3px;
     padding: 0;
     position: relative;
-    transition: background-color .2s linear;
+    transition: background-color .2s ease;
     width: 20px;
 }
+
+.splide__pagination {
+
+    position: relative;
+    margin-top: 40px !important;
+}
+
 
 .splide__pagination__page.is-active {
     background: #a13458;

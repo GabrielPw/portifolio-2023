@@ -52,15 +52,27 @@ html{
 
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: end;
+}
+
+.apresentacao-buttons, .apresentacao-buttons button{
+
     width: 100%;
+}
+
+.container-contato{
+
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .apresentacao-buttons .btn-contato{
 
-    background: var(--bg-blue) !important;
-    color: white !important;
+    background: var(--bg-blue);
+    color: white;
 }
-
 
 
 .languages-hero{
@@ -80,28 +92,6 @@ html{
     display: flex;
     justify-self: auto;
     align-items: self-end;
-}
-
-.table-social{
-
-    width: 100%;
-    box-shadow: 2px 2px 4px #3688a8;
-    border-radius: 1px 5px;
-}
-
-.table-social td{
-
-    font-size: 17px;
-    text-align: center !important;
-    color: white;
-    justify-self: center;
-    padding: 5px;
-    
-}
-
-.table-social{
-
-    background: var(--bg-blue);
 }
 
 .navbar-item img {
@@ -129,12 +119,6 @@ html{
     max-height: 320px;
 }
 
-/* .project-info{
-    background: linear-gradient(to bottom, #55498a, #362c2c);
-    border-radius: 30px;
-    color: white;
-} */
-
 .btn-sobre:hover{
     background: #2b5197;
     color: white;
@@ -145,8 +129,14 @@ html{
 .another-projects-span{
     width: 20%;
     font-family: Helvetica, Arial;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     text-decoration: underline;
+}
+
+.another-project-countainer{
+
+    display: flex;
+    flex-direction: row;
 }
 
 .tecnologias-tags span{
